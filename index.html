@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Test:" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Light and Sound Memory Game!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel ="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js"></script>
+</head>
+<body>
+  <!-- this is the start of content -->
+  <h1>Light and Sound Memory Game!</h1>
+  <h3>How to play:</h3>
+  <p>
+    Below are four boxes with different colors. A sound will play that will
+    highlight with corresponding color in random order. Press the correct
+    order of buttons to pass the memory test.
+  </p>
+
+  <h5>Click "Start" to begin!</h5>
+
+  <button id="startBtn" onclick="startGame()">Start</button>
+  <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+
+  <div id="gameButtonArea">
+    <button
+      id="button1"
+      onclick="guess(1)"
+      onmousedown="startTone(1)"
+      onmouseup="stopTone()"
+    >
+      E
+    </button>
+    <button
+      id="button2"
+      onclick="guess(2)"
+      onmousedown="startTone(2)"
+      onmouseup="stopTone()"
+    >
+      B
+    </button>
+    <button
+      id="button3"
+      onclick="guess(3)"
+      onmousedown="startTone(3)"
+      onmouseup="stopTone()"
+    >
+      G
+    </button>
+    <button
+      id="button4"
+      onclick="guess(4)"
+      onmousedown="startTone(4)"
+      onmouseup="stopTone()"
+    >
+      D
+    </button>
+  </div>
+</body>
+</html>
